@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 MAINTAINER Christoph Hahn <christoph.hahn@tugraz.at>
 
 RUN apt-get update && apt-get -y upgrade && \
-	apt-get install -y build-essential git wget zip libtbb-dev zlib1g-dev libncurses5-dev libbz2-dev liblzma-dev libcurl3-dev && \
+	apt-get install -y build-essential git wget zip python libtbb-dev zlib1g-dev libncurses5-dev libbz2-dev liblzma-dev libcurl3-dev && \
 	apt-get clean && apt-get purge && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
